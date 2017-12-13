@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <META NAME="ROBOTS" CONTENT="NOINDEX">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/museo.css" rel="stylesheet">
+    <title></title>
+    <meta name="description" content="">
+    <script type="text/javascript">
+        function loadFont(a, b, c, d) {
+            function e() {
+                if (!window.FontFace) return !1;
+                var a = new FontFace("t", 'url("data:application/font-woff2,") format("woff2")', {}),
+                    b = a.load();
+                try {
+                    b.then(null, function() {})
+                } catch (c) {}
+                return "loading" === a.status
+            }
+            var f = navigator.userAgent,
+                g = !window.addEventListener || f.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !f.match(/Chrome/);
+            if (!g) {
+                var h = {};
+                try {
+                    h = localStorage || {}
+                } catch (i) {}
+                var j = "x-font-" + a,
+                    k = j + "url",
+                    l = j + "css",
+                    m = h[k],
+                    n = h[l],
+                    o = document.createElement("style");
+                if (o.rel = "stylesheet", document.head.appendChild(o), !n || m !== b && m !== c) {
+                    var p = c && e() ? c : b,
+                        q = new XMLHttpRequest;
+                    q.open("GET", p), q.onload = function() {
+                        q.status >= 200 && q.status < 400 && (h[k] = p, h[l] = q.responseText, d || (o.textContent = q.responseText))
+                    }, q.send()
+                } else o.textContent = n
+            }
+        }
+        loadFont('Museo Sans Cyrl 500', 'css/museo.css');
+    </script>
+
+</head>
+
+<body>
+    <header class="onBack">
+        <div class="topmenu content">
+            <div class="brand" onclick="window.scrollTo(0,0);window.location.hash = ''">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="topmenu_elements">
+                <div class="menu_closer"><img class="close_menu" src="img/cross.png" alt=""></div>
+                <div class="menu_element"><a href="#about" class="">О нас</a></div>
+                <div class="menu_element"><a href="#catalog">Каталог</a></div>
+                <div class="menu_element"><a href="#delivery">Доставка</a></div>
+                <div class="menu_element"><a href="#contacts">Контакты</a></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <img class="mainImage" src="img/mainb.jpg" alt="">
+        <div class="mainText content">
+
+            <h2>Детские игровые площадки</h2>
+            <p>Любимое место большинства малышей — это увлекательная детская площадка. Компания «Свидъ» предлагает качественные детские площадки морской тематики из дерева, выполненные на заказ. Мы занимаемся производством из дерева интересных городков,
+                домиков, крепостей и кораблей. В нашем ассортименте представлены безопасные, проверенные временем и оригинально оформленные элементы, которые непременно понравятся Вашим детям и прослужат долгие годы. На оборудованном уличном комплексе
+                ребёнок играя получает море положительных эмоций, гармонично развивается физически и социально. Кроме того, профессионально оформленная конструкция органично вписывается в любой ландшафт.
+            </p>
+            <h2>Продукция марки «Свидъ» — результат слаженной работы команды профессионалов:</h2>
+            <ul>
+                <li>художников, обладающих отличным чувством прекрасного;</li>
+                <li>конструкторов, которые знают, как придать надёжность и функциональность конструкциям;</li>
+                <li>мастеров, умеющих работать с натуральным деревом.</li>
+            </ul>
+            <h2>Исполнение мечты</h2>
+            <p>Кто из малышей не мечтал побывать в роли отважного капитана корабля или поучаствовать в героическом взятии крепости? Мечту ребёнка, волшебство вполне возможно осуществить.</p>
+            <h2>Принципы</h2>
+            <p>В производстве уличных конструкций мы придерживаемся следующих принципов:</p>
+            <ul>
+                <li><em>Эстетичность.</em> Детские игровые комплексы из дерева — результат усердного труда дизайнеров и художников, которые мастерски создают прекрасные вещи, приятные на вид. Красивое окружение формируют хороший вкус у ребёнка с раннего возраста,
+                    помогая ему развиваться духовно и творчески;</li>
+                <li><em>Безопасность.</em> В процессе разработки комплекса строго соблюдаются все требования нормативов, принятых в этой сфере производства. Мастера учитывают малейшие тонкости изготовления деревянных игровых площадок для детей. Это обеспечивает
+                    удобство в использовании и предотвращает любые негативные последствия;</li>
+                <li><em>Экологичность.</em> Для производства площадок используются дерево - сибирская лиственница. Древесина лиственницы обладает уникальным свойством - она устойчива к воздействию вредителей и не нуждается в обработке химикатами.</li>
+            </ul>
+        </div>
+        <div class="mainFooter">
+            <img class="footerImage" src="img/imagebottom.jpg" alt="">
+
+            <div class="buttons">
+                <div class="button">
+                    <a href="#">Хит продаж!</a>
+                </div>
+                <div class="button">
+                    <a href="#">Скидка до 10.10.17</a>
+                </div>
+                <div class="button">
+                    <a href="#">Новинка!</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="caption">
+            <div class="text">
+                О нас
+            </div>
+        </div>
+        <img class="mainImage" src="img/abouttop.jpg" alt="">
+        <div class="mainText content">
+            <h2>Наша миссия:</h2>
+            <p>Мы стремимся делать лучшие детские площадки.</p>
+            <p>Мы обладаем и стараемся постоянно развивать соответствующие компетенции.</p>
+            <p>Мы понимаем, как делать красивые вещи, имеем превосходные знания по прочности материалов, работаем на основе принципов, гарантирующих высокое качество детских городков и придаем большое значение созданию нетривиальной продукции.</p>
+            <p>Мы постоянно прилагаем усилия для совершенствования своих знаний и навыков.</p>
+            <p>Мы точно знаем, что можем сделать этот мир немного лучше.</p>
+
+        </div>
+        <img class="mainImage" src="img/about2.jpg" alt="">
+        <div class="content">
+            <h2>Детские площадки «СвидЪ» - более экологически чистых в мире нет!</h2>
+            <p>1. Материал, применяемый нами для производства детских площадок - натуральное дерево, сибирская лиственница. Дерево, которое не требует обработки химией. Все другие породы дерева необходимо защищать от гниения составами, убивающими все живое.
+                Сибирская лиственница обладает природными антисептическими свойствами. Древесина лиственницы стоит на первом месте по стойкости к гниению. Подобными свойствами обладают только некоторые редкие тропические виды деревьев.</p>
+            <p>2. Детские площадки «СвидЪ» обработаны составом на основе льняного масла - экологически чистое решение. Покрытие используется для защиты детской площадки от загрязнения, атмосферных осадков и воздействия УФ солнца, в состав входят только натуральные
+                материалы. Подобные масляные покрытия широко применяются при изготовлении именно качественных деревянных изделий. Широко применяются в США, Германии, особенно популярны в Японии.</p>
+            <p>3. Производство изделий из массива дерева весь мир считает наиболее экологически чистым видом производства.</p>
+
+        </div>
+    </section>
+    <section id="catalog">
+        <div class="caption">
+            <div class="text">
+                Каталог
+            </div>
+        </div>
+        <img class="mainImage" src="img/cat.jpg" alt="">
+        <div class="content">
+            <h3>Корабли</h3>
+        </div>
+        <div class="element">
+            <img class="catalogImage" src="img/cat1.jpg" alt="">
+            <div class="elementText">
+                <div class="elementCaption">
+                    Санта-Мария
+                </div>
+                <div class="elementDescription">
+                    Дух первооткрывателей и великих<br> исследователей
+                </div>
+            </div>
+            <div class="elementThumbs">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+            </div>
+            <div class="layer hidden">
+                <span class="close"></span>
+                <img class="fullImage" src="" alt="">
+            </div>
+        </div>
+
+        <div class="element">
+            <img class="catalogImage" src="img/cat1.jpg" alt="">
+            <div class="elementText">
+                <div class="elementCaption">
+                    Санта-Мария
+                </div>
+                <div class="elementDescription">
+                    Дух первооткрывателей и великих<br> исследователей
+                </div>
+            </div>
+            <div class="elementThumbs">
+              <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+                <img class="thumb" style='background-image:url("img/thumb1-1.jpg")' alt="" data-full="img/thumb1-1.jpg">
+            </div>
+            <div class="layer hidden">
+                <span class="close"></span>
+                <img class="fullImage" src="" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <h3>Разное</h3>
+        </div>
+        <div class="elementsSmall">
+
+
+            <div class="element">
+                <img class="catalogImage" src="img/mayak.jpg" alt="">
+                <div class="elementText">
+                    <div class="elementCaption">
+                        Маяк большой
+                    </div>
+                </div>
+                <div class="elementThumbs">
+                    <img class="thumb" style='background-image:url("img/mayak-1.jpg")' alt="" data-full="img/mayak-1.jpg">
+                    <img class="thumb" style='background-image:url("img/mayak-1.jpg")' alt="" data-full="img/mayak-1.jpg">
+
+                </div>
+                <div class="layer hidden">
+                    <span class="close"></span>
+                    <img class="fullImage" src="" alt="">
+                </div>
+            </div>
+            <div class="element">
+                <img class="catalogImage" src="img/mayak.jpg" alt="">
+                <div class="elementText">
+                    <div class="elementCaption">
+                        Маяк большой
+                    </div>
+                </div>
+                <div class="elementThumbs">
+                    <img class="thumb" style='background-image:url("img/mayak-1.jpg")' alt="" data-full="img/mayak-1.jpg">
+                    <img class="thumb" style='background-image:url("img/mayak-1.jpg")' alt="" data-full="img/mayak-1.jpg">
+                </div>
+                <div class="layer hidden">
+                    <span class="close"></span>
+                    <img class="fullImage" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <h3>Проекты</h3>
+        </div>
+        <div class="element">
+            <img class="catalogImage" src="img/pr.jpg" alt="">
+            <div class="elementText">
+                <div class="elementCaption">
+                    Озерный город
+                </div>
+            </div>
+            <div class="elementThumbs">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+            </div>
+            <div class="layer hidden">
+                <span class="close"></span>
+                <img class="fullImage" src="" alt="">
+            </div>
+        </div>
+
+        <div class="element">
+            <img class="catalogImage" src="img/pr.jpg" alt="">
+            <div class="elementText">
+                <div class="elementCaption">
+                    Озерный город
+                </div>
+            </div>
+            <div class="elementThumbs">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+                <img class="thumb" style='background-image:url("img/pr-1.jpg")' alt="" data-full="img/pr-1.jpg">
+            </div>
+            <div class="layer hidden">
+                <span class="close"></span>
+                <img class="fullImage" src="" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="delivery">
+        <img class="map" src="img/map.jpg" alt="">
+    </section>
+    <section id="contacts">
+        <div class="content">
+            <h2>Отдел продаж</h2>
+            <div class="offices">
+              <div class="office china">
+                <div class="country">
+                  Китай:
+                </div>
+                <div class="location">
+                  <p>Харбин</p>
+                  <p>Далянь</p>
+                </div>
+              </div>
+
+              <div class="office rus">
+                <div class="country">
+                  Россия:
+                </div>
+                <div class="location">
+                  <p>Москва, 127015, ул. Большая Новодмитровская, 36, стр. 2,</p>
+                  <p class="tel">+7（495）410-81-02</p>
+                </div>
+                <div class="location">
+                  <p>Москва, 127015, ул. Большая Новодмитровская, 36, стр. 2,</p>
+                  <p class="tel">+7（495）410-81-02</p>
+                </div>
+                <div class="location">
+                  <p>Москва, 127015, ул. Большая Новодмитровская, 36, стр. 2,</p>
+                  <p class="tel">+7（495）410-81-02</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+<script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
+<script src="js/main.js" charset="utf-8"></script>
+
+</html>
