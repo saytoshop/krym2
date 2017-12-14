@@ -16,12 +16,12 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 gulp.task('autopref', function() {
-    return gulp.src('app/css/skynet.css')
+    return gulp.src('app/css/main.css')
         .pipe(autoprefixer({
             browsers: ['last 4 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist/css'));
 });
 gulp.task('watch', ['browser-sync', 'autopref','img'], function() {
     gulp.watch('app/css/*.css', ['autopref', browserSync.reload]); // Наблюдение за sass файлами в папке sass
