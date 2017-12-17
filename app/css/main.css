@@ -120,7 +120,9 @@ text-transform: uppercase;
 
 .limited {
     width: 1170px;
+    max-width: 100%;
     margin: auto;
+        box-sizing: border-box;
 }
 
 h1 {
@@ -228,6 +230,7 @@ h1 {
 
 .portfolioElement img {
     height: 100%;
+    width: 100%;
 }
 
 .portfolioElement:hover .elementHover {
