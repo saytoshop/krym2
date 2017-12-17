@@ -7,8 +7,12 @@
     <meta charset="utf-8">
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="css/museo.css" rel="stylesheet">
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
+
     <title></title>
     <meta name="description" content="">
     <script type="text/javascript">
@@ -57,13 +61,16 @@
             <div class="address">Крым, Симферополь, ул. Беспалова, д.110 В </div>
             <a href="tel:+7 (978) 987-65-43" class="tel">+7 (978) 987-65-43</a>
         </div>
-        <div class="slider"><img src="img/bg.jpg" alt="" class="slide"></div>
+        <div class="slider owl-carousel">
+            <img src="img/bg.jpg" alt="" class="slide">
+            <img src="img/bg.jpg" alt="" class="slide">
+        </div>
 
         <div class="overSlider">
             <div class="overSlider__navigation limited">
                 <div class="logo">
                     <div class="rainbow">
-                        КРЫМ2.РФ
+                        <img src="img/krim.png" alt="">
                     </div>
                     <p>cветодиодная реклама</p>
                 </div>
@@ -139,8 +146,8 @@
     <article class="catalogMenu">
 
     </article>
-    <article class="catalogText limited">
-
+    <div class="ajaxData" style="display:none;">
+        <!--эмуляция ответа сервера при клике по .menu__element-->
         <h2>Бегущие строки красные</h2>
         <div class="topBlock">
             <img src="img/str1.png" alt="">
@@ -153,7 +160,7 @@
             <div class="tech__title">
                 Технические характеристики
             </div>
-            <ul class="tech__values">
+            <ul class="techValues">
                 <li class="tech__value">
                     <span class="key">Разрешение модуля:</span>
                     <span class="value">320 х 160 мм</span>
@@ -256,21 +263,133 @@
             </tr>
         </table>
 
+    </div>
+    <article class="catalogText limited hidden">
+
+
     </article>
     <article class="portfolio">
         <div class="portfolio__elements limited">
-            <img src="img/w1.jpg" alt="" class="portfolioElement">
-            <img src="img/w2.jpg" alt="" class="portfolioElement">
-            <img src="img/w3.jpg" alt="" class="portfolioElement">
+            <div class="portfolioElement">
+                <img src="img/w1.jpg" alt="" class="">
+                <div class="elementHover">
+                    <div class="elementHover__title">
+                        Бегущая срока. <br> Цвет красный, 32х192 см
+                    </div>
+                    <div class="elementHover_text">
+                        г. Симферополь, ул. Глинки, д.44
+                    </div>
+                    <a href="" class="elementHover__button button button_ar ">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+
+            <div class="portfolioElement">
+                <img src="img/w2.jpg" alt="" class="">
+                <div class="elementHover">
+                    <div class="elementHover__title">
+                        Бегущая срока. <br> Цвет красный, 32х192 см
+                    </div>
+                    <div class="elementHover_text">
+                        г. Симферополь, ул. Глинки, д.44
+                    </div>
+                    <a href="" class="elementHover__button button button_ar ">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="portfolioElement">
+                <img src="img/w3.jpg" alt="" class="">
+                <div class="elementHover">
+                    <div class="elementHover__title">
+                        Бегущая срока. <br> Цвет красный, 32х192 см
+                    </div>
+                    <div class="elementHover_text">
+                        г. Симферополь, ул. Глинки, д.44
+                    </div>
+                    <a href="" class="elementHover__button button button_ar ">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
         </div>
         <div class="portfolio__links">
             <a href="" class="portfolio__link rightBorder">ЗАГРУЗИТЬ ЕЩЕ</a>
             <a href="" class="portfolio__link">СМОТРЕТЬ ВСЕ ПРОЕКТЫ</a>
         </div>
     </article>
+    <article class="portfolioMore limited hidden">
+
+    </article>
+    <div class="ajaxDataPortfolio limited" style="display:none">
+        <div class="portfolioMore__title">Бегущая строка красная</div>
+        <div class="portfolioMore__content portfolioMoreContent">
+            <div class="portfolioMoreContent__left">
+                <p>Для компании ОАО «Алтын» г Симферополь, ул. Глинки, д.44</p>
+                <ul class="techValues">
+                    <li class="tech__value">
+                        <span class="key">Разрешение модуля:</span>
+                        <span class="value">320 х 160 мм</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Яркость:</span>
+                        <span class="value">2500 nits</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Степень защиты:</span>
+                        <span class="value">???</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Расстояние просмотра:</span>
+                        <span class="value">???</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Угол обзора:</span>
+                        <span class="value">???</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Ширина модуля:</span>
+                        <span class="value">???</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Угол обзора:</span>
+                        <span class="value">???</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Высота  модуля:</span>
+                        <span class="value">???</span>
+                    </li>
+                    <li class="tech__value">
+                        <span class="key">Рабочее напряжение:</span>
+                        <span class="value">AC110V / 220 V +- 10%</span>
+                    </li>
+                </ul>
+                <div class="topBlock__price">Цена 11 700 руб.</div>
+            </div>
+            <div class="portfolioMoreContent__right">
+                <div class="portfolioMoreContent__slider ">
+                    <img src="img/w2.jpg" alt="">
+                    <a href="img/w2.jpg"></a>
+                    <a href="img/w2.jpg"></a>
+                    <a href="img/w2.jpg"></a>
+                    <a href="img/w2.jpg"></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <article class="clients">
         <span class="clients__title">Наши клиенты</span>
-        <div class="clients__slider limited">
+        <div class="clients__slider limited owl-carousel">
+            <div class="clients__slide slide">
+                <img src="img/s.png" alt="">
+                <div class="slide__text">
+                    ООО «Прогрес» Консалтинг, аудит
+                </div>
+            </div>
+            <div class="clients__slide slide">
+                <img src="img/s.png" alt="">
+                <div class="slide__text">
+                    ООО «Прогрес» Консалтинг, аудит
+                </div>
+            </div>
             <div class="clients__slide slide">
                 <img src="img/s.png" alt="">
                 <div class="slide__text">
@@ -371,7 +490,9 @@
         </div>
     </footer>
 </body>
-<script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
-<script src="js/main.js" charset="utf-8"></script>
+<script defer src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
+<script defer src="js/owl.carousel.min.js" charset="utf-8"></script>
+<script defer src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<script defer src="js/main.js" charset="utf-8"></script>
 
 </html>
